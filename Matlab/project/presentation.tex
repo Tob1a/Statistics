@@ -1,0 +1,113 @@
+\documentclass{beamer}
+
+% -------------------------
+% TEMA PULITO E ACCADEMICO
+% -------------------------
+\usetheme{Madrid}
+\usecolortheme{default}
+\titlegraphic{\includegraphics[height=1.2cm]{logo.png}}
+
+% -------------------------
+% COLORI ISTITUZIONALI
+% -------------------------
+\definecolor{unifered}{HTML}{203D6F}   % blu ferrara
+\setbeamercolor{structure}{fg=unifered}
+\setbeamercolor{frametitle}{bg=unifered, fg=white}
+\setbeamercolor{title}{fg=unifered}
+
+% -------------------------
+% RIMUOVE NAVIGATION SYMBOLS
+% -------------------------
+\setbeamertemplate{navigation symbols}{}
+
+% -------------------------
+% INFORMAZIONI
+% -------------------------
+\title[Monte Carlo]{Simulazione Monte Carlo}
+\subtitle{Applicazioni in Statistica}
+\author{Tobia Sacchetto}
+\institute{Università degli Studi di Ferrara}
+\date{\today}
+
+% -------------------------
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Introduzione}
+
+\begin{frame}{Metodo Monte Carlo}
+\begin{itemize}
+    \item Tecnica di simulazione numerica
+    \item Basata su campionamento casuale
+    \item Applicazioni in statistica e finanza
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Dati della consegna}
+\framesubtitle{Arrivi}
+    Le richieste di arrivo sono casuali con un tasso medio $=\lambda$. Il tempo di arrivo tra un arrivo e il successivo segue una distribuzione esponenziale:
+\[
+t\_arrivo \sim Exp(\lambda)
+\]
+Di conseguenza
+\[
+\mathbb{E}[A]=\frac{1}{\lambda}
+\]
+\end{frame}
+
+\begin{frame}
+\frametitle{Dati della consegna}
+\framesubtitle{Servizi}
+   Ogni server impiega
+\[
+t\_servizio \sim Exp(\mu)
+\]
+Di conseguenza
+\[
+\mathbb{E}[S]=\frac{1}{\lambda}
+\]
+\end{frame}
+
+\begin{frame}
+\frametitle{Obbiettivo}
+
+   Ogni server impiega
+\[
+t\_servizio \sim Exp(\mu)
+\]
+Di conseguenza
+\[
+\mathbb{E}[S]=\frac{1}{\lambda}
+\]
+\end{frame}
+
+
+
+
+\begin{frame}{Metodo Monte Carlo}
+Consiste in  simulare il sistema evento per evento, invece di risolvere equazioni analitiche. La logica è:
+\begin{itemize}
+    \item Genera il tempo del prossimo arrivo
+    \item Genera il tempo di servizio per quella richiesta
+    \item Assegna la richiesta al primo server libero, oppure mettila in coda
+    \item Avanza il tempo al prossimo evento (arrivo o fine servizio)
+    \item Ripeti fino al tempo T
+\end{itemize}
+
+Questo approccio si chiama simulazione a eventi discreti
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\end{document}
