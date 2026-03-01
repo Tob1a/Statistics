@@ -67,24 +67,149 @@ t\_servizio \sim Exp(\mu)
 \]
 Di conseguenza
 \[
-\mathbb{E}[S]=\frac{1}{\lambda}
+\mathbb{E}[S]=\frac{1}{\mu}
 \]
 \end{frame}
 
 \begin{frame}
-\frametitle{Obbiettivo}
+    \frametitle{Teoria delle code}
 
-   Ogni server impiega
-\[
-t\_servizio \sim Exp(\mu)
-\]
-Di conseguenza
-\[
-\mathbb{E}[S]=\frac{1}{\lambda}
-\]
+    La teoria delle code è lo studio matematico delle linee di attesa (o code) e di processi correlati, quali il processo di arrivo in coda, l'attesa  e il processo di servizio.
+    Noi useremo la notazione di David George \underline{Kendall} in questa teoria.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Teoria delle code}
+    \framesubtitle{Kendall}
+    Kendall introdusse notazione $A/B/C$ per descrivere il modello a code.
+    La prima lettera ($A$) indica la distribuzione del  sistema di arrivo, $B$ è la distribuzione dei servizi e la $C$ è il numero di server
+    $A$ e $B$ sono distribuzioni di tempi, non di numeri.
+    Nella prima lettera i valori comuni che possiamo avere sono: 
+    \begin{itemize}
+        \item $M\to$ arrivi Markoviani
+        \item $D\to$ arrivi deterministici (intervalli fissi)
+        \item $E_k\to$ arrivi per una distribuzione di Erlang ($[0,+\infty)$)
+        \item $G\to$ generica distribuzione
+    \end{itemize}
+    Per $B$ valgono gli stessi valori.\\
+    Seguendo le regole appena spiegate si deduce che abbiamo un sistema del tipo $M/M/1$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Teoria delle code}
+    \framesubtitle{Markov}
+    Markoviano vuol dire che soddisfa la proprietà di Andrey \underline{Markov}. Ovvero:
+    \[
+    P(futuro|presente,passato)=P(futuro|presente)
+    \]
+    La distribuzione esponenziale è l'unica distribuzione continua con la proprietà di assenza di memoria.
+    La proprietà di assenza di memoria è quando la variabile T è senza memoria se:
+    \[P(T>s+t|T>s)=P(T>t)
+    \] 
+    La formula indica che se ho già aspettato s, la probabilità di aspettare ancora t è la stessa di quando ho iniziato ad aspettare.
 \end{frame}
 
 
+\begin{frame}
+    \frametitle{Teoria delle code}
+    \framesubtitle{Markov = esponenziale}
+    Quindi per l'esponenziale
+    \[T\sim Exp(\lambda)\]
+    \[P(T>t)=e^{-\lambda t}\]
+    Sostituiamo:
+    \[P(T>s+t|T>s)=\frac{P(T>s+t)}{P(T>s)}=\frac{e^{-\lambda(t+s)}}{e^{-\lambda s}}=e^{-\lambda t}=P(T>t)\]
+    Quindi il markoviano è uguale all'esponenziale
+\end{frame}
+
+\begin{frame}
+    \frametitle{Teoria delle code}
+    \framesubtitle{Parametro di traffico}
+    Nel modello M/M/N, secondo la Teoria delle code il parametro di traffico del sistema è
+    \[\rho=\frac{\lambda}{N\cdot \mu}\]
+    Dove:
+    \begin{itemize}
+        \item $N$ è il numero di server
+        \item $\lambda$ è il tasso medio di arrivo (arrivi per unità di tempo)
+        \item $\mu$ è il tasso medio di servizio (arrivi serviti per unità di tempo)
+    \end{itemize}
+    Inoltre nel modello M/M/1:
+    \begin{itemize}
+        \item Numero medio di clienti nel sistema:
+        \[L=\frac{\rho}{1 - \rho}\]
+        \item Tempo medio nel sistema:
+        \[W=\frac{1}{\mu - \lambda}\]
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+        \frametitle{Teoria delle code}
+        \framesubtitle{Parametro di traffico}
+        
+        \begin{itemize}
+            \item Se $\rho < 1$: il sistema è stabile, la coda non cresce all'infinito
+            \item Se $\rho \geq 1$: la coda cresce indefinitamente, il sistema è sovraccarico 
+        \end{itemize}
+        
+\end{frame}
+
+\begin{frame}
+    \frametitle{distribuzione esponenziale}
+    Noi possiamo usare distribuzioni uniformi \texttt{rand()} o normali standard \texttt{randn()}. Quindi per l'esponenziale dobbiamo trovare un modo per calcolarlo.
+    Utiliziamo il metodo dell'inversa.
+    Se abbiamo un $U \sim Unif(0,1)$ cioè un numero tra 0 e 1.L'idea è che conosco la CDF ($F(x)$) posso invertirla per trasformare $U$ nella mia esponenziale
+\end{frame}
+
+\begin{frame}
+    \frametitle{distribuzione esponenziale}
+    La CDF dell'esponenziale è
+    \[F_X(x)=\begin{cases}
+        0,& \mbox{Se} x>0\\
+        1-e^{-\lambda x},& \mbox{Se} x\geq 0
+    \end{cases}\]
+    La PDF è:
+    \[Exp(\lambda,x)=\begin{cases}
+        0,& \mbox{Se} x>0\\
+        \lambda e^{-\lambda x},& \mbox{Se} x\geq 0
+    \end{cases}\]
+    Verifichiamo anche facendo l'integrale della PDF per trovarmi la CDF
+    \[F_X(x)=\int_0^x{\lambda e^{-\lambda x}}= 1-e^{-\lambda x}\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{distribuzione esponenziale}
+    Quindi possiamo porre la seguente equazione (dove U è l'uniforme):
+    \begin{align}
+        U&=F(x)\\
+        U&=1-e^{-\lambda x}\\
+        e^{-\lambda x}&=1-U\\
+        -\lambda x&=\ln{(1-U)}\\
+         x&=-\frac{\ln{(1-U)}}{\lambda}
+    \end{align}
+    Ecco la formula per passare dall'uniforme all'esponenziale. Ma possiamo scriverla anche come
+    \[-\frac{\ln{(U)}}{\lambda}\]
+    perchè sia $1-U$ che $U$ sono entrambi uniformi tra 0 e 1
+\end{frame}
+
+\begin{frame}
+    \frametitle{Obiettivi}
+    \framesubtitle{Statistiche rilevanti}
+    \begin{itemize}
+        \item Tempo medio di attesa in coda: quanto aspetta una richiesta prima di essere presa in carico
+        \item Probabilità di servizio immediato: quante richieste trovano subito un server libero $(\%)$
+        \item Occupazione dei server: che frazione del tempo ciascun server è occupato
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Obiettivi}
+    \framesubtitle{prestazioni e ottimizazzione}
+    \begin{itemize}
+        \item Confrontare i risultati ottenuti per diversi valori di N
+        \item Valutare come il tempo medio di attesa e la probabilità di servizio immediato variano al variare di $\lambda $ e $ \mu$
+    \end{itemize}
+\end{frame}
 
 
 \begin{frame}{Metodo Monte Carlo}

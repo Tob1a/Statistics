@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.2.18)  1 MAR 2026 02:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.2.18)  26 FEB 2026 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,7 +538,7 @@ Package: amsthm 2020/05/29 v2.20.6
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box77
-) (presentation/presentation.aux)
+) (%OUTDIR%/presentation.aux)
 \openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -614,7 +614,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 33.
- (presentation/presentation.out) (presentation/presentation.out)
+ (%OUTDIR%/presentation.out) (%OUTDIR%/presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
@@ -679,7 +679,7 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (presentation/presentation.nav)
+) (%OUTDIR%/presentation.nav)
 Overfull \hbox (14.45503pt too wide) in paragraph at lines 33--33
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -841,7 +841,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 162--162
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 171--171
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -855,76 +855,6 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 178--178
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[12
-
-]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 193--193
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[13
-
-]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 203--203
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[14
-
-]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 212--212
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[15
-
-]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 227--227
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[16
-
-]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -934,7 +864,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
- (presentation/presentation.aux)
+ (%OUTDIR%/presentation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -943,18 +873,18 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: A966D16D6F8523DEFFA98419FA21CFEC;103.
  ) 
 Here is how much of TeX's memory you used:
- 21808 strings out of 475171
- 419349 string characters out of 5767095
- 783496 words of memory out of 5000000
- 44321 multiletter control sequences out of 15000+600000
- 566061 words of font info for 62 fonts, out of 8000000 for 9000
+ 21781 strings out of 475171
+ 418987 string characters out of 5767095
+ 782497 words of memory out of 5000000
+ 44305 multiletter control sequences out of 15000+600000
+ 565893 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,16n,123p,440b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation/presentation.pdf (16 pages, 186328 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on %OUTDIR%/presentation.pdf (11 pages, 161212 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
