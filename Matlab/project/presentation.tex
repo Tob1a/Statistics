@@ -36,15 +36,6 @@
 
 \section{Introduzione}
 
-\begin{frame}{Metodo Monte Carlo}
-\begin{itemize}
-    \item Tecnica di simulazione numerica
-    \item Basata su campionamento casuale
-    \item Applicazioni in statistica e finanza
-\end{itemize}
-\end{frame}
-
-
 \begin{frame}
 \frametitle{Dati della consegna}
 \framesubtitle{Arrivi}
@@ -133,20 +124,27 @@ Di conseguenza
         \item $\lambda$ è il tasso medio di arrivo (arrivi per unità di tempo)
         \item $\mu$ è il tasso medio di servizio (arrivi serviti per unità di tempo)
     \end{itemize}
-    Inoltre nel modello M/M/1:
-    \begin{itemize}
-        \item Numero medio di clienti nel sistema:
-        \[L=\frac{\rho}{1 - \rho}\]
-        \item Tempo medio nel sistema:
-        \[W=\frac{1}{\mu - \lambda}\]
-    \end{itemize}
+
+    % Inoltre nel modello M/M/1:
+    % \begin{itemize}
+    %     \item Numero medio di arrivi nel sistema:
+    %     \[L=\frac{\rho}{1 - \rho}\]
+    %     \item Tempo medio nel sistema:
+    %     \[W=\frac{1}{\mu - \lambda}\]
+    % \end{itemize}
+    Per trovare il limite di N basta eseguire la seguente equazione:
+    \begin{align}
+        rho&=\frac{\lambda}{N\cdot \mu}\\
+        1&=\left \lceil \frac{\lambda}{N\cdot \mu} \right \rceil\\
+        N&=\left \lceil \frac{\lambda}{\mu} \right \rceil
+    \end{align}
 
 \end{frame}
 
 \begin{frame}
         \frametitle{Teoria delle code}
         \framesubtitle{Parametro di traffico}
-        
+        Dove $\left \lceil\right \rceil$ è la funzione \texttt{ceil()}. Inoltre
         \begin{itemize}
             \item Se $\rho < 1$: il sistema è stabile, la coda non cresce all'infinito
             \item Se $\rho \geq 1$: la coda cresce indefinitamente, il sistema è sovraccarico 
@@ -212,6 +210,17 @@ Di conseguenza
 \end{frame}
 
 
+\begin{frame}
+    \frametitle{Obiettivi}
+    \framesubtitle{analisi statistica}
+    Ripetendo la simulazione K volte si ottengono K stime del tempo medio di attesa. Da lì si può:
+    \begin{itemize}
+        \item Calcolare media e varianza campionarie
+        \item Costruire intervalli di confidenza al $95\%$ usando la distribuzione t di Student (per K piccolo) o normale (per K grande)
+        \item Verificare il Teorema del Limite Centrale: le medie campionarie si distribuiscono normalmente, anche se il tempo di attesa singolo non lo è
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{Metodo Monte Carlo}
 Consiste in  simulare il sistema evento per evento, invece di risolvere equazioni analitiche. La logica è:
 \begin{itemize}
@@ -224,6 +233,70 @@ Consiste in  simulare il sistema evento per evento, invece di risolvere equazion
 
 Questo approccio si chiama simulazione a eventi discreti
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Funzione queue lenght}
+    Nel codice si ha:\\
+    \texttt{future\_load = sum(max(0, server\_free\_at - current\_time));}\\
+    \texttt{approx\_queue = max(0, round(future\_load * mu) - N);}\\
+    Perchè si moltiplica per $\mu$?
+    perchè $mu$ nel sistema $M/M/N$ è \[\mu=\text{tasso di servizio}=\frac{\text{Arrivi}}{\text{Unità di tempo}}\]
+    quindi:
+    \begin{align}
+        future_load&\cdot \mu=\\
+        (\text{Unita di tempo})&\cdot \frac{\text{Arrivi}}{\text{Unità di tempo}}\approx \text{Arrivi}
+    \end{align}
+\end{frame}
+   
+\begin{frame}
+    \frametitle{Funzione queue lenght}
+    Poi dagli Arrivi si sottrae al massimo N arrivi. Perchè N arrivi possono essere in servizio gli altri sono in coda 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Funzione polyfit}
+    \texttt{polyfit(x,y,n)} trova il polinomio di grado $n$ che approssima meglio i dati nel senso dei minimi quadrati. Dove $x$ e $y$ sono le ascisse e le ordinate dei dati.
+    $n$ in questo caso è 1 quindi la nostra è una regressione lineare e non polinomiale.
+    Per comprendere meglio supponiamo di avere i dati
+    \[
+    (x_1, y_1), (x_2, y_2), \dots, (x_m, y_m)
+    \]
+    e si vuole trovare un polinomio di grado $n$:
+    \[
+    p(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0
+    \]
+    La funzione \texttt{polyfit} cerca i coefficienti $a_n, \dots, a_0$ che \textbf{minimizzano l'errore quadratico totale}:
+    \[
+    S = \sum_{i=1}^{m} (y_i - p(x_i))^2 
+    = \sum_{i=1}^{m} \big( y_i - (a_n x_i^n + \dots + a_0) \big)^2
+    \]
+\end{frame}
+
+\begin{frame}
+    \frametitle{Funzione polyfit}
+    \framesubtitle{funzione obbiettivo}
+
+    Dove:
+    \begin{itemize}
+        \item $y_i$ è il valore reale del dato
+        \item $\hat{y}_i = p(x_i)$ è il valore predetto dal polinomio
+    \end{itemize}
+
+    Per ciascun dato, si definisce l'errore:
+
+    \[
+    e_i = y_i - \hat{y}_i
+    \]
+
+    La funzione obiettivo (somma dei quadrati degli errori) è:
+
+    \[
+    S = e_1^2 + e_2^2 + \dots + e_m^2
+    \]
+
+    Più $S$ è piccolo, meglio il polinomio approssima i dati.  
+    L'uso del quadrato serve a penalizzare maggiormente gli scostamenti grandi rispetto a quelli piccoli.
 \end{frame}
 
 

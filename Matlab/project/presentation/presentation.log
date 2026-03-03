@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.2.18)  1 MAR 2026 02:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.2.18)  3 MAR 2026 01:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,33 +704,19 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 45--45
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 50--50
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
-
-
-
-Overfull \hbox (14.45503pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[2
-
-]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 59--59
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 59.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 50.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
@@ -740,10 +726,24 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
+[2
+
+]
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 63--63
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (14.45503pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
 [3
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 72--72
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 71--71
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -757,7 +757,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 80--80
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 88--88
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -771,7 +771,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 97--97
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 102--102
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -785,7 +785,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 111--111
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 114--114
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -799,8 +799,12 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 123--123
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 142--142
  [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \vbox (0.62773pt too high) detected at line 142
  []
 
 
@@ -813,7 +817,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 144--144
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 153--153
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -827,7 +831,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 155--155
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 160--160
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -841,7 +845,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 162--162
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 176--176
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -855,7 +859,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 178--178
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 191--191
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -869,7 +873,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 193--193
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 201--201
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -883,7 +887,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 203--203
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 210--210
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -897,7 +901,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 212--212
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 222--222
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -911,7 +915,7 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (14.45503pt too wide) in paragraph at lines 227--227
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 236--236
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
@@ -923,6 +927,62 @@ Overfull \hbox (14.45503pt too wide) has occurred while \output is active
  []
 
 [16
+
+]
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 250--250
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (14.45503pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[17
+
+]
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 255--255
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (14.45503pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[18
+
+]
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 274--274
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (14.45503pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[19
+
+]
+Overfull \hbox (14.45503pt too wide) in paragraph at lines 300--300
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (14.45503pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[20
 
 ]
 \tf@nav=\write6
@@ -943,18 +1003,18 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: A966D16D6F8523DEFFA98419FA21CFEC;103.
  ) 
 Here is how much of TeX's memory you used:
- 21808 strings out of 475171
- 419349 string characters out of 5767095
+ 21829 strings out of 475171
+ 419541 string characters out of 5767095
  783496 words of memory out of 5000000
- 44321 multiletter control sequences out of 15000+600000
- 566061 words of font info for 62 fonts, out of 8000000 for 9000
+ 44333 multiletter control sequences out of 15000+600000
+ 566355 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,16n,123p,440b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation/presentation.pdf (16 pages, 186328 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on presentation/presentation.pdf (20 pages, 209911 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

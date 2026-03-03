@@ -368,6 +368,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 OUTPUT presentation/presentation.nav
 OUTPUT presentation/presentation.toc
 OUTPUT presentation/presentation.snm
@@ -381,6 +382,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
